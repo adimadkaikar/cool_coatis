@@ -1,4 +1,5 @@
 # Ignoring unnecessary files
 
+*.pdf
 *.tmp
 *.log
