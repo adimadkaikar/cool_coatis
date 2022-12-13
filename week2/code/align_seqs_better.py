@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
 """
-Still figuring out. Shouldn't be too different from previous ones.
 Script to align two sequences after taking an input from user.
 If no input is provided the script will run with default arguements.
+All individual functions can work independently!
+Ejoy!
 """
 
 __author__ = 'Aditi Madkaiakr (arm122@ic.ac.uk)'
@@ -137,14 +138,17 @@ def seq_order(seq1='ATCG', seq2='ATCGA'):
         if choice.lower() == "y":
             my_best_align = None
             my_best_score = -1
-
+            dict_to_save = dict()
+   
             for i in range(l1): # Note that you just take the last alignment with the highest score
                 z = calculate_score(s1, s2, l1, l2, i)
                 if z > my_best_score:
                     my_best_align = "." * i + s1 # think about what this is doing!
                     my_best_score = z 
-            return my_best_align, s1, my_best_score
-
+                    num = i
+                    list_to_save = [my_best_align, s1, 'Best score: ', my_best_score]
+                dict_to_save[num] = list_to_save
+            return dict_to_save
         else:
             return "The ordered sequences and their lengths are:", s1, s2, l1, l2
     return 0
