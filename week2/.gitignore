@@ -1,1 +1,4 @@
-*
+# Ignoring only unnessary files
+
+/__pychache__
+*.pdf
