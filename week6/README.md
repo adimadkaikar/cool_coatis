@@ -7,7 +7,8 @@ This folder conatins a set of scripts that were created by group 3 for week 6.
 Python 3.10.6, R 4.1.2, bash
 
 ### Dependencies: 
-Dependencies are listed in weekly folders.
+Python:
+sys, numpy, scipy, matplotlib, time
 
 ### Project structure and Usage: 
 
