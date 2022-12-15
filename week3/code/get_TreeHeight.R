@@ -1,4 +1,6 @@
 #!/usr/bin/env Rscript
+
+# loading the packages
 library(tools)
 
 # loading data from the command line
@@ -23,6 +25,7 @@ treedata$Tree.Height.m <- treehgt
 
 ## select the first two rows of data
 height_selected <- treedata[1:2,]
+height_selected$Input_Name <- argv[1]
 
 ## saving the output file
 output <- basename(file_path_sans_ext(argv[1]))

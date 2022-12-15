@@ -42,6 +42,7 @@ treedata["Tree.Height.m"] = TreeHeight(treedata["Angle.degrees"], treedata["Dist
 
 # select the first two rows of data
 treedata = treedata.head(2)
+treedata["Input_Name"] = argv
 
 # saving the output file
 path_results = ["../results/",os.path.splitext(argv)[0],"_treeheights.csv"]
