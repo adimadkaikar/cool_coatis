@@ -1,6 +1,6 @@
 """
 Author:Shengge Tong (shengge.tong22@imperial.ac.uk)
-Date: 12/2022
+Date: Dec.2022
 Description: Python version of Vectorize1
 """
 import numpy as np
@@ -10,6 +10,11 @@ M = np.random.uniform(0, 1, (1000, 1000))
 
 
 def SumAllElements(M):
+    """
+    Description: Using functions to sum all the elements
+    Args: M
+    output: int
+    """
     Dimensions = M.shape
     Tol = 0
     for i in range(Dimensions[0]):
@@ -19,6 +24,11 @@ def SumAllElements(M):
 
 
 def timing(fun, *args):
+    """
+    Description: Using timing function to calculate the time cost of the script
+    Args: fun, *args
+    output: float
+    """
     start = time.time()
     res = fun(*args)
     end = time.time()

@@ -1,4 +1,4 @@
-"""Python version of vectorize2."""
+"""This script is a Python version of vectorize2."""
 
 __appname__ = 'Vectorize2.py'
 __author__ = 'shengge.tong22@imperial.ac.uk'
@@ -13,6 +13,11 @@ def stochrick(p0=np.random.uniform(0.5, 1.5, 1000),
               K=1,
               sigma=0.2,
               numyears=100):
+    """
+    Description: Runs the stochastic Ricker equation with gaussian fluctuations
+    Args: p0, r, K, sigma, numyears
+    output: np.array
+    """
     N = np.zeros((numyears, len(p0)))
     N[0, ] = p0
     for pop in range(0, len(p0)):
@@ -26,6 +31,11 @@ def stochrickvect(p0=np.random.uniform(0.5, 1.5, 1000),
               K=1,
               sigma=0.2,
               numyears=100):
+    """
+    Description: Write another function called stochrickvect that vectorizes the above to the extent possible, with improved performance
+    Args: p0, r, K, sigma, numyears
+    output: np.array
+    """         
     N = np.zeros((numyears, len(p0)))
     N[0,] = p0
     for yr in range(1, numyears):
@@ -34,6 +44,11 @@ def stochrickvect(p0=np.random.uniform(0.5, 1.5, 1000),
 
 
 def timing(fun, *args):
+    """
+    Description: This function is used to calculate the time cost for the script
+    Args: fun, *args
+    output: float
+    """
     start = time.time()
     res = fun(*args)
     end = time.time()
