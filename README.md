@@ -13,6 +13,24 @@ Dependencies are listed in weekly folders.
 
 #### week 2
 
+*align_seq_fasta.py* - Script to align two sequences after taking an input from user. It outputs one one best alignment in .csv format. If no input is provided it will run with defaults.
+
+*align_seq_better.py* - Script to align two sequences after taking an input from user. It saves all the best alignments in binary format. If no input is provided the script will run with default arguements. 
+
+*oaks_debugme_groupwork.py* - This script checks whether the TestOaksData.csv input file contains a header, prints tree species and saves only the oak species. 
+
+##### Dependencies:
+
+*sys* - used for taking the input parameter from command line
+
+*csv* - used for reading and writing comma separated files
+
+*re* - for using regular expressions in python
+
+*pickle* - used for reading and writing binary files in python
+
+*doctest* - used for running doctests on a python module
+
 #### week 3
 
 *PP_regress_loc.R* - The linear regression relationship between the predator mass and prey mass is examined, and the analysis is separate by the dataset's *Location* field.
