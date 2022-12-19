@@ -1,37 +1,14 @@
-## README file for coal_coatis
+# Week2 CMEE Groupwork
 
-### Brief description: 
-This folder conatins a set of scripts that were created by group 3 in weeks 2,3 and 6.
+## Description:
 
-### Languages: 
-Python 3.10.6, R 4.1.2, bash
+This directory contains the week2 CMEE Groupwork from Group 3. The results generated will be saved to the results directory.
 
-### Dependencies: 
-Dependencies are listed in weekly folders.
+## Languages:
 
-### Project structure and Usage: 
+Python, R, shell, LaTeX
 
-#### week 2
-
-*align_seq_fasta.py* - Script to align two sequences after taking an input from user. It outputs one one best alignment in .csv format. If no input is provided it will run with defaults.
-
-*align_seq_better.py* - Script to align two sequences after taking an input from user. It saves all the best alignments in binary format. If no input is provided the script will run with default arguements. 
-
-*oaks_debugme_groupwork.py* - This script checks whether the TestOaksData.csv input file contains a header, prints tree species and saves only the oak species. 
-
-##### Dependencies:
-
-*sys* - used for taking the input parameter from command line
-
-*csv* - used for reading and writing comma separated files
-
-*re* - for using regular expressions in python
-
-*pickle* - used for reading and writing binary files in python
-
-*doctest* - used for running doctests on a python module
-
-#### week 3
+## Structure:
 
 *PP_regress_loc.R* - The linear regression relationship between the predator mass and prey mass is examined, and the analysis is separate by the dataset's *Location* field.
 
@@ -51,7 +28,7 @@ Dependencies are listed in weekly folders.
 
 *os* - used to split the string of input and eliminate the extension in R
 
-*pandas* - for csv reading
+*pandas* - for csv reading in Python
 
 *numpy* - for mathematical operation when defining the tree height
 
@@ -59,9 +36,8 @@ Dependencies are listed in weekly folders.
 
 *tidyverse* - for selecting data and subsetting
 
-#### week 6
+## Authors and contact:
 
-### Contact: 
 + Aditi Madkaikar; arm122@ic.ac.uk
 + Agnes Szwarczynska; aas122@ic.ac.uk
 + Ruth Brown; ruth.brown2222@imperial.ac.uk
